@@ -187,16 +187,16 @@ export default function TaskItem({ task }: { task: Task }) {
         {/* Quick reminders */}
         <div className="mt-3 flex gap-2 text-xs">
           <button
+            onClick={(e) => quickRem(e, 1 * 60 * 1000)}
+            className="bg-yellow-100 px-2 py-1 rounded"
+          >
+            Remind 1m
+          </button>
+          <button
             onClick={(e) => quickRem(e, 5 * 60 * 1000)}
             className="bg-yellow-100 px-2 py-1 rounded"
           >
-            Remind 5m
-          </button>
-          <button
-            onClick={(e) => quickRem(e, 60 * 60 * 1000)}
-            className="bg-yellow-100 px-2 py-1 rounded"
-          >
-            1h
+            Remined 5m
           </button>
         </div>
       </div>

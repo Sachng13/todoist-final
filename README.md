@@ -166,6 +166,8 @@ Everything is stored in the browser using **localForage**:
 
 1. Install dependencies
 
-```bash
 npm install
-```
+
+2. Start the development server
+
+npm run dev
